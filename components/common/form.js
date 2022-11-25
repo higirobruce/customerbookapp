@@ -164,7 +164,7 @@ export default function Form({ handleLoadRecords, editRow }) {
         }
         onClick={() => (editRow ? editRecord() : createRecord())}
       >
-        {submitting && <Loader inline active size="mini" />}
+        {submitting && <Loader inline active size="mini" inverted/>}
         {!submitting && "Submit"}
       </Button>
     </div>
